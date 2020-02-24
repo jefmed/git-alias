@@ -12,20 +12,20 @@ $ vim ~/.gitconfig
 	name = your name
 
 [alias]
-  pom = push origin master -u
-  ps = push
-  ci = "!f() { git commit -m \"$*\"; }; f"
-  co = checkout
-  cm = checkout master
-  cd = checkout develop
-  cb = checkout -b
-  st = status -sb
-  sf = show --name-only
-  lg = log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30
-  incoming = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' ..@{u})
-  outgoing = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)
-  unstage = reset HEAD --
-  undo = checkout --
-  rollback = reset --soft HEAD~1
+  git pom = Coloca a branch Master como upstream do projeto.
+  git ps = Push simples.
+  git ci = Gera o commit somente com a mensagem, sem precisar de aspas.
+  git co = Checkout simples.
+  git cm = Faz checkout na branch Master.
+  git cd = Faz checkout na branch Develop.
+  git cb = Cria uma nova branch e faz checkout para a mesma.
+  git st = Mostra as informações de track/commit de forma sucinta e objetiva.
+  git sf = Mostra os arquivos que foram modificados por um commit.
+  git lg = Mostra o log da arvores de commits de uma forma mais explicita e intuitiva.
+  git incoming = Mostra todos os commits que estão no git para chegar com o pull.
+  git outgoing = Mostra os commit feitos no projeto que estão prontos para push.
+  git unstage = Remove o arquivo do commit.
+  git undo = Desfaz uma alteração no arquivo e volta para o estado inicial do commit.
+  git rollback = Defaz o ultimo commit, mas mantem os arquivos.
 
 ```
