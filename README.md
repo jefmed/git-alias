@@ -14,9 +14,10 @@ $ vim ~/.gitconfig
 [alias]
   pom = push origin master -u
   ps = push
-  ci = commit
+  ci = "!f() { git commit -m \"$*\"; }; f"
   co = checkout
   cm = checkout master
+  cd = checkout develop
   cb = checkout -b
   st = status -sb
   sf = show --name-only
