@@ -17,4 +17,5 @@
   outgoing = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)
   unstage = reset HEAD --
   undo = checkout --
+  resetlocal = reset --hard
   rollback = reset --soft HEAD~1

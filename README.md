@@ -26,6 +26,7 @@ $ vim ~/.gitconfig
   git outgoing = Mostra os commit feitos no projeto que estão prontos para push.
   git unstage = Remove o arquivo do commit.
   git undo = Desfaz uma alteração no arquivo e volta para o estado inicial do commit.
+  git resetlocal = Desfazer alterações de todos os arquivos locais
   git rollback = Defaz o ultimo commit, mas mantem os arquivos.
 
 ```
